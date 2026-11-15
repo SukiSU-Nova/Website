@@ -2,7 +2,7 @@ import {defineConfig} from 'vitepress'
 import {groupIconMdPlugin, groupIconVitePlugin} from 'vitepress-plugin-group-icons'
 
 export default defineConfig({
-    title: 'SukiSU-Ultra',
+    title: 'SukiSU Nova',
     // description: 'Next-Generation Android Root Solution - Advanced kernel-based root management for Android devices with KernelSU integration',
 
     lastUpdated: true,
@@ -92,8 +92,8 @@ export default defineConfig({
 
         // Theme and app configuration
         ['meta', {name: 'theme-color', content: '#64edff'}],
-        ['meta', {name: 'application-name', content: 'SukiSU-Ultra'}],
-        ['meta', {name: 'apple-mobile-web-app-title', content: 'SukiSU-Ultra'}],
+        ['meta', {name: 'application-name', content: 'SukiSU Nova'}],
+        ['meta', {name: 'apple-mobile-web-app-title', content: 'SukiSU Nova'}],
         ['meta', {name: 'apple-mobile-web-app-capable', content: 'yes'}],
         ['meta', {name: 'apple-mobile-web-app-status-bar-style', content: 'default'}],
 
@@ -103,7 +103,7 @@ export default defineConfig({
 
         // Enhanced Open Graph for global sharing
         ['meta', {property: 'og:type', content: 'website'}],
-        ['meta', {property: 'og:site_name', content: 'SukiSU-Ultra'}],
+        ['meta', {property: 'og:site_name', content: 'SukiSU Nova'}],
         ['meta', {property: 'og:image', content: 'https://sukisu.org/og-image.png'}],
         ['meta', {property: 'og:image:width', content: '1200'}],
         ['meta', {property: 'og:image:height', content: '630'}],
@@ -130,9 +130,9 @@ export default defineConfig({
         // Global SEO optimization
         ['meta', {
             name: 'keywords',
-            content: 'Android root, KernelSU, SukiSU-Ultra, Android kernel, root management, 安卓 root, カーネル, рут'
+            content: 'Android root, KernelSU, SukiSU Nova, SukiSU Ultra, Android kernel, root management, 安卓 root, カーネル, рут'
         }],
-        ['meta', {name: 'author', content: 'SukiSU-Ultra Team'}],
+        ['meta', {name: 'author', content: 'SukiSU Nova Team'}],
         ['meta', {
             name: 'robots',
             content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
@@ -143,12 +143,12 @@ export default defineConfig({
         ['script', {type: 'application/ld+json'}, JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'SoftwareApplication',
-            'name': 'SukiSU-Ultra',
+            'name': 'SukiSU Nova',
             'description': 'Next-Generation Android Root Solution',
             'applicationCategory': 'SystemApplication',
             'operatingSystem': 'Android',
             'url': 'https://sukisu.org',
-            'downloadUrl': 'https://github.com/sukisu-ultra/sukisu-ultra/releases',
+            'downloadUrl': 'https://github.com/SukiSU-Nova/SukiSU-Nova/releases',
             'supportingData': {
                 '@type': 'DataCatalog',
                 'name': 'Compatibility Database'
@@ -166,8 +166,8 @@ export default defineConfig({
             },
             'author': {
                 '@type': 'Organization',
-                'name': 'SukiSU-Ultra Team',
-                'url': 'https://github.com/sukisu-ultra'
+                'name': 'SukiSU Nova Team',
+                'url': 'https://github.com/SukiSU-Nova'
             }
         })],
 
@@ -175,7 +175,7 @@ export default defineConfig({
         ['link', {rel: 'manifest', href: '/site.webmanifest'}],
         ['meta', {name: 'apple-mobile-web-app-capable', content: 'yes'}],
         ['meta', {name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent'}],
-        ['meta', {name: 'apple-mobile-web-app-title', content: 'SukiSU-Ultra'}],
+        ['meta', {name: 'apple-mobile-web-app-title', content: 'SukiSU Nova'}],
 
         // Cloudflare Web Analytics
         ['script', {
@@ -189,7 +189,7 @@ export default defineConfig({
         logo: {src: '/logo.svg', width: 24, height: 24},
 
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/sukisu-ultra/sukisu-ultra'},
+            {icon: 'github', link: 'https://github.com/SukiSU-Nova/SukiSU-Nova'},
             {
                 icon: {
                     svg: '<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-telegram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" /></svg>'
@@ -264,7 +264,7 @@ export default defineConfig({
                     }
                 },
                 editLink: {
-                    pattern: 'https://github.com/SukiSU-Ultra/Website/edit/main/docs/:path',
+                    pattern: 'https://github.com/SukiSU-Nova/Website/edit/main/docs/:path',
                     text: 'Edit this page on GitHub',
                 },
                 docFooter: {
@@ -322,7 +322,7 @@ export default defineConfig({
                     }
                 },
                 editLink: {
-                    pattern: 'https://github.com/SukiSU-Ultra/Website/edit/main/docs/:path',
+                    pattern: 'https://github.com/SukiSU-Nova/Website/edit/main/docs/:path',
                     text: '在 GitHub 上编辑此页面',
                 },
                 docFooter: {

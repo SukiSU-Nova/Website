@@ -1,8 +1,8 @@
 {
-  "name": "sukisu-ultra-docs",
+  "name": "sukisu-nova-docs",
   "author": "Saksham <saksham.mac@icloud.com>",
   "version": "1.2.0",
-  "description": "SukiSU-Ultra Documentation - Next-Generation Android Root Solution",
+  "description": "SukiSU Nova Documentation - Next-Generation Android Root Solution",
   "type": "module",
   "scripts": {
     "dev": "vitepress dev docs --host",
@@ -14,16 +14,17 @@
     "root",
     "kernelsu",
     "sukisu",
+    "nova",
     "documentation",
     "vitepress"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/sukisu-ultra/website.git"
+    "url": "https://github.com/SukiSU-Nova/website.git"
   },
   "homepage": "https://sukisu.org",
   "bugs": {
-    "url": "https://github.com/sukisu-ultra/website/issues"
+    "url": "https://github.com/SukiSU-Nova/website/issues"
   },
   "devDependencies": {
     "@types/node": "^26.0.0",

@@ -1,6 +1,6 @@
 # Integration
 
-SukiSU-Ultra can be integrated into both GKI and non-GKI kernels. The prerequisite is an open-source, bootable kernel.
+SukiSU-Nova can be integrated into both GKI and non-GKI kernels. The prerequisite is an open-source, bootable kernel.
 
 ::: tip Just want to use it on a GKI device?
 You do not need to build a kernel. Install it as a Loadable Kernel Module with the Manager: see [LKM installation](./installation#method-1-lkm-via-the-manager-recommended).
@@ -13,7 +13,7 @@ Some OEM customizations can result in a large share of the kernel code being out
 | Branch | How it hooks the kernel | Typical use |
 |--------|-------------------------|-------------|
 | `main` | Kprobes / kretprobes and the `sys_enter` syscall tracepoint, registered at runtime. No hook calls have to be added to the kernel source. | GKI kernels, and building as a module (LKM) or built in |
-| `builtin` | No kprobes. The kernel source calls SukiSU-Ultra's hook entry points (manual hooks). | Kernels you patch by hand |
+| `builtin` | No kprobes. The kernel source calls SukiSU-Nova's hook entry points (manual hooks). | Kernels you patch by hand |
 
 ::: warning Outdated options
 `CONFIG_KSU_MANUAL_HOOK` and `CONFIG_KSU_TRACEPOINT_HOOK` no longer exist in either branch, and the `ksu_trace.h` header used by the old *Tracepoint Hook* guide is gone. Guides that tell you to enable them are out of date.
@@ -32,7 +32,7 @@ Some OEM customizations can result in a large share of the kernel code being out
 Run this in the root of your kernel source tree:
 
 ```sh [bash]
-curl -LSs "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh" | bash -s main
+curl -LSs "https://raw.githubusercontent.com/SukiSU-Nova/SukiSU-Nova/main/kernel/setup.sh" | bash -s builtin-new
 ```
 
 The script clones the repository, links it into `drivers/kernelsu` and adds the entries to `drivers/Makefile` and `drivers/Kconfig`. Use `--cleanup` to undo it.
@@ -59,7 +59,7 @@ This branch does not register kprobes. You add calls to its hook entry points in
 First add the branch to your source tree:
 
 ```sh [bash]
-curl -LSs "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh" | bash -s builtin
+curl -LSs "https://raw.githubusercontent.com/SukiSU-Nova/SukiSU-Nova/main/kernel/setup.sh" | bash -s builtin
 ```
 
 This branch also carries the SUSFS options (`CONFIG_KSU_SUSFS` and its sub-options) and `CONFIG_KPM`, which needs a 64-bit kernel.

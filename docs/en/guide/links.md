@@ -6,7 +6,7 @@
 If you need to submit a translation for the manager, or improve existing translations, please visit our Weblate project.
 :::
 
-**Translation Platform:** [Weblate - SukiSU-Ultra](https://hosted.weblate.org/projects/sukisu-ultra/)
+**Translation Platform:** [Weblate - SukiSU-Nova](https://hosted.weblate.org/projects/SukiSU-Nova/)
 
 ## 🔧 Projects & Builds
 
@@ -51,23 +51,23 @@ Test builds are experimental and may be unstable
 Download the latest stable versions from our GitHub releases
 :::
 
-**GitHub Releases:** [SukiSU-Ultra Releases](https://github.com/sukisu-ultra/sukisu-ultra/releases)
+**GitHub Releases:** [SukiSU-Nova Releases](https://github.com/SukiSU-Nova/SukiSU-Nova/releases)
 
 ### Issue Reporting
 ::: info Bug Reports & Feature Requests
 Report bugs or request new features on our GitHub repository
 :::
 
-**GitHub Issues:** [Report Issues](https://github.com/sukisu-ultra/sukisu-ultra/issues)
+**GitHub Issues:** [Report Issues](https://github.com/SukiSU-Nova/SukiSU-Nova/issues)
 
 ## 🔗 Quick Links Summary
 
 | Resource | Link | Description |
 |----------|------|-------------|
-|  **Translations** | [Crowdin](https://crowdin.com/project/SukiSU-Ultra) | Submit translations |
+|  **Translations** | [Crowdin](https://crowdin.com/project/SukiSU-Nova) | Submit translations |
 |  **Telegram Group** | [t.me/sukiksu](https://t.me/sukiksu) | Community support |
 |  **Test Builds** | [Test Channel](https://t.me/Sukiksu/7114) | Experimental builds |
-|  **Releases** | [GitHub Releases](https://github.com/sukisu-ultra/sukisu-ultra/releases) | Stable downloads |
-|  **Issues** | [GitHub Issues](https://github.com/sukisu-ultra/sukisu-ultra/issues) | Bug reports |
+|  **Releases** | [GitHub Releases](https://github.com/SukiSU-Nova/SukiSU-Nova/releases) | Stable downloads |
+|  **Issues** | [GitHub Issues](https://github.com/SukiSU-Nova/SukiSU-Nova/issues) | Bug reports |
 |  **GKI Builds** | [GKI Repository](https://github.com/ShirkNeko/GKI_KernelSU_SUSFS) | Universal builds |
 |  **OnePlus Builds** | [OnePlus Repository](https://github.com/ShirkNeko/Action_OnePlus_MKSU_SUSFS) | Device-specific builds |

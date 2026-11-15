@@ -1,6 +1,6 @@
 # App Profile
 
-App Profile 用于控制 SukiSU-Ultra 如何对待每一个应用：是否允许使用 root、获得 root 后以什么身份运行，以及模块对它是否可见。你可以在管理器应用中管理这些配置。
+App Profile 用于控制 SukiSU-Nova 如何对待每一个应用：是否允许使用 root、获得 root 后以什么身份运行，以及模块对它是否可见。你可以在管理器应用中管理这些配置。
 
 ## 配置类型
 
@@ -33,7 +33,7 @@ App Profile 用于控制 SukiSU-Ultra 如何对待每一个应用：是否允许
 
 ### 标志
 
-- **no_new_privs**：禁止在该 root 配置的上下文中通过 SukiSU-Ultra 进一步提升权限。
+- **no_new_privs**：禁止在该 root 配置的上下文中通过 SukiSU-Nova 进一步提升权限。
 
 ### SELinux 上下文
 
@@ -42,7 +42,7 @@ App Profile 用于控制 SukiSU-Ultra 如何对待每一个应用：是否允许
 
 ### 卸载模块
 
-启用后，SukiSU-Ultra 会为该应用还原被模块修改过的文件。适用于不应察觉到模块改动的应用。
+启用后，SukiSU-Nova 会为该应用还原被模块修改过的文件。适用于不应察觉到模块改动的应用。
 
 ## 模板
 

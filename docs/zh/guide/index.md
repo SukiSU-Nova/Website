@@ -1,10 +1,10 @@
 # 介绍
 
-欢迎使用 SukiSU-Ultra，这是新一代 Android root 解决方案，为 Android 设备提供基于内核的高级 root 管理功能
+欢迎使用 SukiSU-Nova，这是新一代 Android root 解决方案，为 Android 设备提供基于内核的高级 root 管理功能
 
 ## 什么是SukiSU-Ultra？
 
-SukiSU-Ultra 是专为 Android 设备设计的现代化、安全且功能强大的 root 方案。它提供内核级别的 root 权限管理，具备增强的安全功能和更好的兼容性
+SukiSU-Nova 是专为 Android 设备设计的现代化、安全且功能强大的 root 方案。它提供内核级别的 root 权限管理，具备增强的安全功能和更好的兼容性
 
 ## 主要特性
 
@@ -35,7 +35,7 @@ SukiSU-Ultra 是专为 Android 设备设计的现代化、安全且功能强大�
 
 准备好开始使用SukiSU-Ultra了吗？请遵循我们的分步指南：
 
-1. **[安装](./installation)** - 了解如何在您的设备上安装 SukiSU-Ultra
+1. **[安装](./installation)** - 了解如何在您的设备上安装 SukiSU-Nova
 2. **[兼容性](./compatibility)** - 查看设备兼容性要求
 3. **[链接](./links)** - 查找额外资源和下载内容
 

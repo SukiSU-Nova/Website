@@ -1,6 +1,6 @@
 # App Profile
 
-App Profile lets you control how SukiSU-Ultra treats each app: whether it may use root, which identity it runs as once it does, and whether modules are visible to it. You manage profiles in the Manager app.
+App Profile lets you control how SukiSU-Nova treats each app: whether it may use root, which identity it runs as once it does, and whether modules are visible to it. You manage profiles in the Manager app.
 
 ## Profile types
 
@@ -33,7 +33,7 @@ Only grant what the app actually needs.
 
 ### Flags
 
-- **no_new_privs**: prevents further privilege escalation via SukiSU-Ultra from within the context of this root profile.
+- **no_new_privs**: prevents further privilege escalation via SukiSU-Nova from within the context of this root profile.
 
 ### SELinux context
 
@@ -42,7 +42,7 @@ Only grant what the app actually needs.
 
 ### Umount modules
 
-When enabled, SukiSU-Ultra restores any files that modules have modified, as seen by this app. Use it for apps that should not observe module changes.
+When enabled, SukiSU-Nova restores any files that modules have modified, as seen by this app. Use it for apps that should not observe module changes.
 
 ## Templates
 

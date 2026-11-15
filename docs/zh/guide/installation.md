@@ -1,6 +1,6 @@
 # 安装参考
 
-::: details 将会了解 SukiSU-Ultra 安装过程
+::: details 将会了解 SukiSU-Nova 安装过程
 [[toc]]
 :::
 
@@ -11,11 +11,11 @@
 
 ## LKM 安装
 
-LKM 模式将 SukiSU-Ultra 作为可加载内核模块 (LKM) 安装。管理器会用与你设备 KMI 匹配的预构建模块修补 boot 镜像，因此无需自行编译内核。**推荐优先使用这种方式。**
+LKM 模式将 SukiSU-Nova 作为可加载内核模块 (LKM) 安装。管理器会用与你设备 KMI 匹配的预构建模块修补 boot 镜像，因此无需自行编译内核。**推荐优先使用这种方式。**
 
 ### 步骤：
 
-1. **安装管理器**：从 [GitHub Releases](https://github.com/SukiSU-Ultra/SukiSU-Ultra/releases) 下载最新的 `SukiSU_*.apk` 并安装。
+1. **安装管理器**：从 [GitHub Releases](https://github.com/SukiSU-Nova/SukiSU-Nova/releases) 下载最新的 `SukiSU_*.apk` 并安装。
 2. **开始安装**：在主页点击安装卡片（**点击安装**）。
 3. **选择提供 boot 镜像的方式**：
    - **直接安装（推荐）**。
@@ -26,7 +26,7 @@ LKM 模式将 SukiSU-Ultra 作为可加载内核模块 (LKM) 安装。管理器�
 5. **刷入并重启。**
 
 ::: tip 预构建 LKM 镜像
-发布版本提供以下 KMI 的预构建模块（均有 aarch64 与 x86_64）：`android12-5.10`、`android13-5.10`、`android13-5.15`、`android14-5.15`、`android14-6.1`、`android15-6.6`、`android16-6.12`、`android17-6.18`。最新列表请见[最新发布](https://github.com/SukiSU-Ultra/SukiSU-Ultra/releases/latest)。
+发布版本提供以下 KMI 的预构建模块（均有 aarch64 与 x86_64）：`android12-5.10`、`android13-5.10`、`android13-5.15`、`android14-5.15`、`android14-6.1`、`android15-6.6`、`android16-6.12`、`android17-6.18`。最新列表请见[最新发布](https://github.com/SukiSU-Nova/SukiSU-Nova/releases/latest)。
 :::
 
 ::: warning 越狱模式
@@ -104,13 +104,13 @@ LKM 模式将 SukiSU-Ultra 作为可加载内核模块 (LKM) 安装。管理器�
 #### 主分支（LKM）
 
 ```sh [bash]
-curl -LSs "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh" | bash -s main
+curl -LSs "https://raw.githubusercontent.com/SukiSU-Nova/SukiSU-Nova/main/kernel/setup.sh" | bash -s main
 ```
 
 #### 内置构建分支
 
 ```sh [bash]
-curl -LSs "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh" | bash -s builtin
+curl -LSs "https://raw.githubusercontent.com/SukiSU-Nova/SukiSU-Nova/main/kernel/setup.sh" | bash -s builtin
 ```
 
 ::: warning 必需的内核配置
@@ -154,7 +154,7 @@ curl -LSs "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kern
 如果在安装过程中遇到问题：
 
 1. 查看我们的[兼容性指南](./compatibility)了解设备要求
-2. 访问我们的 [GitHub 仓库](https://github.com/sukisu-ultra/sukisu-ultra)获取支持
+2. 访问我们的 [GitHub 仓库](https://github.com/SukiSU-Nova/SukiSU-Nova)获取支持
 3. 加入我们的 [Telegram 社区](https://t.me/sukiksu)获取帮助
 
 ::: danger 安全提醒
