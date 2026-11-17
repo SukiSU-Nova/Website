@@ -15,7 +15,11 @@ export default defineConfig({
 
     // Enhanced markdown with performance focus
     markdown: {
-        math: true,
+        // Shiki has no "patch" or "kconfig" grammar
+        languageAlias: {
+            patch: 'diff',
+            kconfig: 'txt'
+        },
         config(md) {
             md.use(groupIconMdPlugin)
         },
