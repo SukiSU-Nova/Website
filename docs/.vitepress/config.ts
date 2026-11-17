@@ -79,7 +79,7 @@ export default defineConfig({
 
     head: [
         // Resource hints
-        ['link', {rel: 'dns-prefetch', href: '//git.zako.shirkneko.top'}],
+        ['link', {rel: 'dns-prefetch', href: '//git.zako.shirkneko.top:20004'}],
         ['link', {rel: 'dns-prefetch', href: '//t.me'}],
 
         // Essential favicon setup - optimized for performance
