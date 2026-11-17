@@ -16,15 +16,6 @@ dist/
 
 # Generated files
 docs/public/sw.js
-docs/public/favicon*.png
-docs/public/favicon.ico
-docs/public/android-chrome-*.png
-docs/public/apple-touch-icon*.png
-docs/public/safari-pinned-tab.svg
-docs/public/browserconfig.xml
-docs/public/site.webmanifest
-docs/public/manifest.webmanifest
-docs/public/mstile-*.png
 docs/public/favicons.html
 favicon-data.json
 
