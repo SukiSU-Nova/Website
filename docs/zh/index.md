@@ -10,12 +10,12 @@ aside: false
 <script setup lang="ts">
 const hero = {
   badge: '你的下一个 Android Root 方案',
-  badgeHref: 'https://github.com/SukiSU-Nova/SukiSU-Nova/releases',
+  badgeHref: 'https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/releases',
   title: 'SukiSU Nova',
   subtitle: '面向 Android 的内核级 Root 权限管理，安全与灵活兼得。',
   logo: '/logo.svg',
   primary: { label: '开始使用', href: '/zh/guide/installation' },
-  secondary: { label: '访问 GitHub', href: 'https://github.com/SukiSU-Nova/SukiSU-Nova' },
+  secondary: { label: '访问仓库', href: 'https://git.zako.shirkneko.top:20004/shirkneko/SukiSU' },
   chips: ['LKM 安装', '内置 Zygisk', '主题商店', 'Miuix / M3E', '支持 GKI 与非 GKI 内核', 'KPM 内核模块', '开源']
 }
 
@@ -105,10 +105,10 @@ const community = {
   title: '社区与支持',
   items: [
     {
-      title: 'GitHub',
+      title: '仓库',
       body: '源码、问题反馈与版本发布',
-      href: 'https://github.com/SukiSU-Nova/SukiSU-Nova',
-      icon: 'M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.63-.33 2.47-.33c.84 0 1.68.11 2.47.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z'
+      href: 'https://git.zako.shirkneko.top:20004/shirkneko/SukiSU',
+      icon: 'M3 5a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5z'
     },
     {
       title: 'Telegram',
@@ -133,18 +133,17 @@ const footer = {
       title: '资源',
       items: [
         { label: '文档', href: '/zh/guide/' },
-        { label: 'GitHub 仓库', href: 'https://github.com/SukiSU-Nova/SukiSU-Nova' },
-        { label: '下载', href: 'https://github.com/SukiSU-Nova/SukiSU-Nova/releases' },
-        { label: '问题反馈', href: 'https://github.com/SukiSU-Nova/SukiSU-Nova/issues' }
+        { label: '仓库', href: 'https://git.zako.shirkneko.top:20004/shirkneko/SukiSU' },
+        { label: '下载', href: 'https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/releases' },
+        { label: '问题反馈', href: 'https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/issues' }
       ]
     },
     {
       title: '社区',
       items: [
         { label: 'Telegram 频道', href: 'https://t.me/sukiksu' },
-        { label: 'GitHub 讨论区', href: 'https://github.com/SukiSU-Nova/SukiSU-Nova/discussions' },
-        { label: '参与贡献', href: 'https://github.com/SukiSU-Nova/SukiSU-Nova/blob/main/CONTRIBUTING.md' },
-        { label: '许可协议', href: 'https://github.com/SukiSU-Nova/SukiSU-Nova/blob/main/LICENSE' }
+        { label: '参与贡献', href: 'https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/src/branch/main/CONTRIBUTING.md' },
+        { label: '许可协议', href: 'https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/src/branch/main/LICENSE' }
       ]
     }
   ],

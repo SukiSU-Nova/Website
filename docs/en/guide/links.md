@@ -48,17 +48,17 @@ Test builds are experimental and may be unstable
 
 ### Official Releases
 ::: tip Stable Releases
-Download the latest stable versions from our GitHub releases
+Download the latest stable versions from our releases
 :::
 
-**GitHub Releases:** [SukiSU-Nova Releases](https://github.com/SukiSU-Nova/SukiSU-Nova/releases)
+**Releases:** [SukiSU-Nova Releases](https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/releases)
 
 ### Issue Reporting
 ::: info Bug Reports & Feature Requests
-Report bugs or request new features on our GitHub repository
+Report bugs or request new features on our repository
 :::
 
-**GitHub Issues:** [Report Issues](https://github.com/SukiSU-Nova/SukiSU-Nova/issues)
+**Issues:** [Report Issues](https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/issues)
 
 ## 🔗 Quick Links Summary
 
@@ -67,7 +67,7 @@ Report bugs or request new features on our GitHub repository
 |  **Translations** | [Crowdin](https://crowdin.com/project/SukiSU-Nova) | Submit translations |
 |  **Telegram Group** | [t.me/sukiksu](https://t.me/sukiksu) | Community support |
 |  **Test Builds** | [Test Channel](https://t.me/Sukiksu/7114) | Experimental builds |
-|  **Releases** | [GitHub Releases](https://github.com/SukiSU-Nova/SukiSU-Nova/releases) | Stable downloads |
-|  **Issues** | [GitHub Issues](https://github.com/SukiSU-Nova/SukiSU-Nova/issues) | Bug reports |
+|  **Releases** | [Releases](https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/releases) | Stable downloads |
+|  **Issues** | [Issues](https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/issues) | Bug reports |
 |  **GKI Builds** | [GKI Repository](https://github.com/ShirkNeko/GKI_KernelSU_SUSFS) | Universal builds |
 |  **OnePlus Builds** | [OnePlus Repository](https://github.com/ShirkNeko/Action_OnePlus_MKSU_SUSFS) | Device-specific builds |

@@ -32,7 +32,7 @@ SukiSU-Nova 可以集成到 GKI 和非 GKI 内核中。前提条件：开源的�
 在内核源码根目录运行：
 
 ```sh [bash]
-curl -LSs "https://raw.githubusercontent.com/SukiSU-Nova/SukiSU-Nova/main/kernel/setup.sh" | bash -s main
+curl -LSs "https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/raw/branch/main/kernel/setup.sh" | bash -s main
 ```
 
 脚本会克隆仓库、链接到 `drivers/kernelsu`，并在 `drivers/Makefile` 与 `drivers/Kconfig` 中添加条目。使用 `--cleanup` 可撤销。
@@ -59,7 +59,7 @@ curl -LSs "https://raw.githubusercontent.com/SukiSU-Nova/SukiSU-Nova/main/kernel
 先将该分支添加到你的源码树：
 
 ```sh [bash]
-curl -LSs "https://raw.githubusercontent.com/SukiSU-Nova/SukiSU-Nova/main/kernel/setup.sh" | bash -s builtin-new
+curl -LSs "https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/raw/branch/main/kernel/setup.sh" | bash -s builtin-new
 ```
 
 该分支还包含 SUSFS 选项（`CONFIG_KSU_SUSFS` 及其子选项）和需要 64 位内核的 `CONFIG_KPM`。

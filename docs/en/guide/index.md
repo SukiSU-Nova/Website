@@ -67,7 +67,7 @@ Need help? We're here to assist:
 
 - **📖 Documentation**: Comprehensive guides and tutorials
 - **💬 Community**: Active community forums and chat
-- **🐛 Bug Reports**: GitHub issue tracker
+- **🐛 Bug Reports**: issue tracker
 - **📧 Direct Support**: Contact developers for critical issues
 
 ---

@@ -69,7 +69,7 @@ export default defineConfig({
         // Critical resource hints for global performance
         ['link', {rel: 'preconnect', href: 'https://fonts.googleapis.com'}],
         ['link', {rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: ''}],
-        ['link', {rel: 'dns-prefetch', href: '//github.com'}],
+        ['link', {rel: 'dns-prefetch', href: '//git.zako.shirkneko.top'}],
         ['link', {rel: 'dns-prefetch', href: '//t.me'}],
         ['link', {rel: 'dns-prefetch', href: '//sukisu.org'}],
 
@@ -148,7 +148,7 @@ export default defineConfig({
             'applicationCategory': 'SystemApplication',
             'operatingSystem': 'Android',
             'url': 'https://sukisu.org',
-            'downloadUrl': 'https://github.com/SukiSU-Nova/SukiSU-Nova/releases',
+            'downloadUrl': 'https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/releases',
             'supportingData': {
                 '@type': 'DataCatalog',
                 'name': 'Compatibility Database'
@@ -167,7 +167,7 @@ export default defineConfig({
             'author': {
                 '@type': 'Organization',
                 'name': 'SukiSU Nova Team',
-                'url': 'https://github.com/SukiSU-Nova'
+                'url': 'https://git.zako.shirkneko.top:20004/shirkneko'
             }
         })],
 
@@ -189,7 +189,7 @@ export default defineConfig({
         logo: {src: '/logo.svg', width: 24, height: 24},
 
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/SukiSU-Nova/SukiSU-Nova'},
+            {icon: {svg: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 5a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5z" fill="currentColor"/></svg>'}, link: 'https://git.zako.shirkneko.top:20004/shirkneko/SukiSU'},
             {
                 icon: {
                     svg: '<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-telegram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" /></svg>'
@@ -264,8 +264,8 @@ export default defineConfig({
                     }
                 },
                 editLink: {
-                    pattern: 'https://github.com/SukiSU-Nova/Website/edit/main/docs/:path',
-                    text: 'Edit this page on GitHub',
+                    pattern: 'https://git.zako.shirkneko.top:20004/shirkneko/SukiSU-Website/_edit/main/docs/:path',
+                    text: 'Edit this page',
                 },
                 docFooter: {
                     prev: 'Previous',
@@ -322,8 +322,8 @@ export default defineConfig({
                     }
                 },
                 editLink: {
-                    pattern: 'https://github.com/SukiSU-Nova/Website/edit/main/docs/:path',
-                    text: '在 GitHub 上编辑此页面',
+                    pattern: 'https://git.zako.shirkneko.top:20004/shirkneko/SukiSU-Website/_edit/main/docs/:path',
+                    text: '编辑此页面',
                 },
                 docFooter: {
                     prev: '上一页',

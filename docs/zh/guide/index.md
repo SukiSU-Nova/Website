@@ -2,7 +2,7 @@
 
 欢迎使用 SukiSU-Nova，这是新一代 Android root 解决方案，为 Android 设备提供基于内核的高级 root 管理功能
 
-## 什么是SukiSU-Ultra？
+## 什么是SukiSU-Nova？
 
 SukiSU-Nova 是专为 Android 设备设计的现代化、安全且功能强大的 root 方案。它提供内核级别的 root 权限管理，具备增强的安全功能和更好的兼容性
 
@@ -23,7 +23,7 @@ SukiSU-Nova 是专为 Android 设备设计的现代化、安全且功能强大�
 ### 🔌 KPM内核模块支持
 完整的 KernelPatch Module (KPM) 功能，支持高级内核修改和增强
 
-## 为什么选择SukiSU-Ultra？
+## 为什么选择SukiSU-Nova？
 
 - **安全优先**：先进的安全功能保护您的设备和数据
 - **现代架构**：基于现代Android安全模型构建
@@ -33,7 +33,7 @@ SukiSU-Nova 是专为 Android 设备设计的现代化、安全且功能强大�
 
 ## 开始使用
 
-准备好开始使用SukiSU-Ultra了吗？请遵循我们的分步指南：
+准备好开始使用SukiSU-Nova了吗？请遵循我们的分步指南：
 
 1. **[安装](./installation)** - 了解如何在您的设备上安装 SukiSU-Nova
 2. **[兼容性](./compatibility)** - 查看设备兼容性要求
@@ -41,7 +41,7 @@ SukiSU-Nova 是专为 Android 设备设计的现代化、安全且功能强大�
 
 ## 系统要求
 
-安装SukiSU-Ultra之前，请确保您的设备满足以下要求：
+安装SukiSU-Nova之前，请确保您的设备满足以下要求：
 
 - **Android版本**：Android 8.0 (API 26) 或更高版本
 - **引导加载程序**：已解锁的引导加载程序
@@ -67,9 +67,9 @@ SukiSU-Nova 是专为 Android 设备设计的现代化、安全且功能强大�
 
 - **📖 文档**：全面的指南和教程
 - **💬 社区**：活跃的社区论坛和聊天群组
-- **🐛 错误报告**：GitHub问题追踪器
+- **🐛 错误报告**：问题追踪器
 - **📧 直接支持**：联系开发者解决关键问题
 
 ---
 
-**准备好释放您Android设备的全部潜力了吗？** 从我们的[安装指南](./installation)开始，加入成千上万信任SukiSU-Ultra来满足其root需求的用户行列吧!
+**准备好释放您Android设备的全部潜力了吗？** 从我们的[安装指南](./installation)开始，加入成千上万信任SukiSU-Nova来满足其root需求的用户行列吧!

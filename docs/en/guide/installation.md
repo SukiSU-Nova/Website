@@ -22,7 +22,7 @@ LKM mode installs SukiSU-Nova as a Loadable Kernel Module. The Manager patches y
 
 #### Steps:
 
-1.  **Install the Manager**: Download the latest `SukiSU_*.apk` from the [GitHub releases](https://github.com/SukiSU-Nova/SukiSU-Nova/releases) and install it.
+1.  **Install the Manager**: Download the latest `SukiSU_*.apk` from the [releases](https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/releases) and install it.
 2.  **Start the installer**: On the home screen, tap the install card (**Tap to install**).
 3.  **Choose how to provide the boot image**:
     -   **Direct install (Recommended)**.
@@ -33,7 +33,7 @@ LKM mode installs SukiSU-Nova as a Loadable Kernel Module. The Manager patches y
 5.  **Flash and reboot.**
 
 ::: tip Prebuilt LKM images
-Release builds ship prebuilt modules for these KMIs (each for aarch64 and x86_64): `android12-5.10`, `android13-5.10`, `android13-5.15`, `android14-5.15`, `android14-6.1`, `android15-6.6`, `android16-6.12` and `android17-6.18`. See the [latest release](https://github.com/SukiSU-Nova/SukiSU-Nova/releases/latest) for the current list.
+Release builds ship prebuilt modules for these KMIs (each for aarch64 and x86_64): `android12-5.10`, `android13-5.10`, `android13-5.15`, `android14-5.15`, `android14-6.1`, `android15-6.6`, `android16-6.12` and `android17-6.18`. See the [latest release](https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/releases/latest) for the current list.
 :::
 
 ::: warning Jailbreak mode
@@ -89,11 +89,11 @@ This method is for advanced users who are building a kernel from source.
 
 -   **Main Branch (LKM)**:
     ```sh [bash]
-    curl -LSs "https://raw.githubusercontent.com/SukiSU-Nova/SukiSU-Nova/main/kernel/setup.sh" | bash -s main
+    curl -LSs "https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/raw/branch/main/kernel/setup.sh" | bash -s main
     ```
 -   **Builtin Branch**:
     ```sh [bash]        
-    curl -LSs "https://raw.githubusercontent.com/SukiSU-Nova/SukiSU-Nova/main/kernel/setup.sh" | bash -s builtin
+    curl -LSs "https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/raw/branch/main/kernel/setup.sh" | bash -s builtin
     ```
 
 ::: warning Required Kernel Configs
@@ -133,7 +133,7 @@ After installation, please verify the following:
 If you encounter any issues:
 
 1.  Double-check the [Compatibility Guide](./compatibility.md).
-2.  Visit our [GitHub repository](https://github.com/SukiSU-Nova/SukiSU-Nova) for issues and solutions.
+2.  Visit our [repository](https://git.zako.shirkneko.top:20004/shirkneko/SukiSU) for issues and solutions.
 3.  Join our [Telegram community](https://t.me/sukiksu) for live support.
 
 ::: danger Safety Reminder

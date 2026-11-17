@@ -32,7 +32,7 @@ Some OEM customizations can result in a large share of the kernel code being out
 Run this in the root of your kernel source tree:
 
 ```sh [bash]
-curl -LSs "https://raw.githubusercontent.com/SukiSU-Nova/SukiSU-Nova/main/kernel/setup.sh" | bash -s builtin-new
+curl -LSs "https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/raw/branch/main/kernel/setup.sh" | bash -s builtin-new
 ```
 
 The script clones the repository, links it into `drivers/kernelsu` and adds the entries to `drivers/Makefile` and `drivers/Kconfig`. Use `--cleanup` to undo it.
@@ -59,7 +59,7 @@ This branch does not register kprobes. You add calls to its hook entry points in
 First add the branch to your source tree:
 
 ```sh [bash]
-curl -LSs "https://raw.githubusercontent.com/SukiSU-Nova/SukiSU-Nova/main/kernel/setup.sh" | bash -s builtin
+curl -LSs "https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/raw/branch/main/kernel/setup.sh" | bash -s builtin
 ```
 
 This branch also carries the SUSFS options (`CONFIG_KSU_SUSFS` and its sub-options) and `CONFIG_KPM`, which needs a 64-bit kernel.

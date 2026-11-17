@@ -7,7 +7,7 @@
 ## 仍然无法解决？
 
 1. 查看[兼容性](./compatibility)页面。
-2. 在 [GitHub 仓库](https://github.com/SukiSU-Nova/SukiSU-Nova/issues)中搜索或提交 issue。
+2. 在 [仓库](https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/issues)中搜索或提交 issue。
 3. 在 [Telegram 社区](https://t.me/sukiksu)提问。
 
 ::: tip

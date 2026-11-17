@@ -20,11 +20,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/SukiSU-Nova/website.git"
+    "url": "https://git.zako.shirkneko.top:20004/shirkneko/SukiSU-Website.git"
   },
   "homepage": "https://sukisu.org",
   "bugs": {
-    "url": "https://github.com/SukiSU-Nova/website/issues"
+    "url": "https://git.zako.shirkneko.top:20004/shirkneko/SukiSU-Website/issues"
   },
   "devDependencies": {
     "@types/node": "^26.0.0",

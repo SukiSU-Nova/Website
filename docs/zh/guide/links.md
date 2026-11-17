@@ -45,15 +45,15 @@
 ## 下载与发布
 
 ### 官方发布
-> 从我们的 GitHub 发布页面下载最新稳定版本
+> 从我们的发布页面下载最新稳定版本
 
 
-**GitHub 发布：** [SukiSU-Nova 发布](https://github.com/SukiSU-Nova/SukiSU-Nova/releases)
+**发布：** [SukiSU-Nova 发布](https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/releases)
 
 ### 问题报告
-> 在我们的 GitHub 仓库上报告错误或请求新功能
+> 在我们的仓库上报告错误或请求新功能
 
-**GitHub 问题：** [报告问题](https://github.com/SukiSU-Nova/SukiSU-Nova/issues)
+**问题：** [报告问题](https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/issues)
 
 ## 快速链接汇总
 
@@ -62,7 +62,7 @@
 | **翻译**          |         [Crowdin](https://crowdin.com/project/SukiSU-Nova)          |   提交翻译 |
 | **Telegram 群组** |                 [t.me/sukiksu](https://t.me/sukiksu)                 |   社区支持 |
 | **测试构建**        |                  [测试频道](https://t.me/Sukiksu/7114)                   |  实验性构建 |
-| **发布**          |  [GitHub 发布](https://github.com/SukiSU-Nova/SukiSU-Nova/releases)  |   稳定下载 |
-| **问题**          |   [GitHub 问题](https://github.com/SukiSU-Nova/SukiSU-Nova/issues)   |   错误报告 |
+| **发布**          |  [发布](https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/releases)  |   稳定下载 |
+| **问题**          |   [问题](https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/issues)   |   错误报告 |
 | **GKI 构建**      |      [GKI 仓库](https://github.com/ShirkNeko/GKI_KernelSU_SUSFS)       |   通用构建 |
 | **OnePlus 构建**  | [OnePlus 仓库](https://github.com/ShirkNeko/Action_OnePlus_MKSU_SUSFS) | 设备特定构建 |
