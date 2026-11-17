@@ -3,7 +3,7 @@ import {groupIconMdPlugin, groupIconVitePlugin} from 'vitepress-plugin-group-ico
 
 export default defineConfig({
     title: 'SukiSU Nova',
-    // description: 'Next-Generation Android Root Solution - Advanced kernel-based root management for Android devices with KernelSU integration',
+    description: 'Next-generation Android root solution with kernel-level root access management for Android devices.',
 
     lastUpdated: true,
     cleanUrls: true,
@@ -50,28 +50,33 @@ export default defineConfig({
     },
 
     // Critical performance transformations
-    transformPageData(pageData) {
-        const canonicalUrl = `https://sukisu.org${pageData.relativePath}`
+    transformPageData(pageData, {siteConfig}) {
+        // relativePath has no leading slash, e.g. "guide/installation.md"
+        const canonicalUrl = `https://sukisu.org/${pageData.relativePath}`
             .replace(/index\.md$/, '')
             .replace(/\.md$/, '')
+        const isZh = pageData.relativePath.startsWith('zh/')
+        const locale = siteConfig.site.locales[isZh ? 'zh' : 'root']
+        const title = pageData.frontmatter.title || pageData.title || siteConfig.site.title
+        const description = pageData.frontmatter.description || locale?.description || siteConfig.site.description
 
         pageData.frontmatter.head ??= []
         pageData.frontmatter.head.push(
             ['link', {rel: 'canonical', href: canonicalUrl}],
             ['meta', {property: 'og:url', content: canonicalUrl}],
-            ['link', {rel: 'preload', href: '/logo.svg', as: 'image'}]
+            ['meta', {property: 'og:title', content: title}],
+            ['meta', {property: 'og:description', content: description}],
+            ['meta', {property: 'og:locale', content: isZh ? 'zh_CN' : 'en_US'}],
+            ['meta', {property: 'og:locale:alternate', content: isZh ? 'en_US' : 'zh_CN'}]
         )
 
         return pageData
     },
 
     head: [
-        // Critical resource hints for global performance
-        ['link', {rel: 'preconnect', href: 'https://fonts.googleapis.com'}],
-        ['link', {rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: ''}],
+        // Resource hints
         ['link', {rel: 'dns-prefetch', href: '//git.zako.shirkneko.top'}],
         ['link', {rel: 'dns-prefetch', href: '//t.me'}],
-        ['link', {rel: 'dns-prefetch', href: '//sukisu.org'}],
 
         // Essential favicon setup - optimized for performance
         ['link', {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}],
@@ -84,8 +89,6 @@ export default defineConfig({
 
         // Safari Pinned Tab
         ['link', {rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#64edff'}],
-        ['meta', {name: 'msapplication-square310x310logo', content: '/mstile-310x310.png'}],
-        ['meta', {name: 'msapplication-config', content: '/browserconfig.xml'}],
 
         // Web App Manifest
         ['link', {rel: 'manifest', href: '/site.webmanifest'}],
@@ -108,36 +111,20 @@ export default defineConfig({
         ['meta', {property: 'og:image:width', content: '1200'}],
         ['meta', {property: 'og:image:height', content: '630'}],
         ['meta', {property: 'og:image:type', content: 'image/png'}],
-        ['meta', {property: 'og:url', content: 'https://sukisu.org/'}],
-        ['meta', {property: 'og:locale', content: 'en_US'}],
-        ['meta', {property: 'og:locale:alternate', content: 'zh_CN'}],
 
-        // Twitter optimization for global audience
-        ['meta', {property: 'twitter:card', content: 'summary_large_image'}],
-        ['meta', {property: 'twitter:site', content: '@sukisu_ultra'}],
-        ['meta', {property: 'twitter:creator', content: '@sukisu_ultra'}],
-        ['meta', {property: 'twitter:image', content: 'https://sukisu.org/og-image.png'}],
+        // Twitter cards
+        ['meta', {name: 'twitter:card', content: 'summary_large_image'}],
+        ['meta', {name: 'twitter:site', content: '@sukisu_ultra'}],
+        ['meta', {name: 'twitter:creator', content: '@sukisu_ultra'}],
+        ['meta', {name: 'twitter:image', content: 'https://sukisu.org/og-image.png'}],
 
         // Additional SEO optimizations
         ['meta', {
             name: 'robots',
             content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
         }],
-        ['meta', {name: 'googlebot', content: 'index, follow'}],
-        ['meta', {name: 'bingbot', content: 'index, follow'}],
         ['meta', {name: 'referrer', content: 'strict-origin-when-cross-origin'}],
-
-        // Global SEO optimization
-        ['meta', {
-            name: 'keywords',
-            content: 'Android root, KernelSU, SukiSU Nova, SukiSU Ultra, Android kernel, root management, 安卓 root, カーネル, рут'
-        }],
         ['meta', {name: 'author', content: 'SukiSU Nova Team'}],
-        ['meta', {
-            name: 'robots',
-            content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
-        }],
-        ['meta', {name: 'googlebot', content: 'index, follow'}],
 
         // Enhanced structured data for global search engines
         ['script', {type: 'application/ld+json'}, JSON.stringify({
@@ -149,20 +136,10 @@ export default defineConfig({
             'operatingSystem': 'Android',
             'url': 'https://sukisu.org',
             'downloadUrl': 'https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/releases',
-            'supportingData': {
-                '@type': 'DataCatalog',
-                'name': 'Compatibility Database'
-            },
             'offers': {
                 '@type': 'Offer',
                 'price': '0',
                 'priceCurrency': 'USD'
-            },
-            'aggregateRating': {
-                '@type': 'AggregateRating',
-                'ratingValue': '4.8',
-                'bestRating': '5',
-                'ratingCount': '10000'
             },
             'author': {
                 '@type': 'Organization',
@@ -170,12 +147,6 @@ export default defineConfig({
                 'url': 'https://git.zako.shirkneko.top:20004/shirkneko'
             }
         })],
-
-        // PWA optimization for global mobile users
-        ['link', {rel: 'manifest', href: '/site.webmanifest'}],
-        ['meta', {name: 'apple-mobile-web-app-capable', content: 'yes'}],
-        ['meta', {name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent'}],
-        ['meta', {name: 'apple-mobile-web-app-title', content: 'SukiSU Nova'}],
 
         // Cloudflare Web Analytics
         ['script', {
@@ -283,6 +254,7 @@ export default defineConfig({
             label: "简体中文",
             link: "/zh/",
             lang: "zh-Hans",
+            description: '新一代 Android Root 解决方案，为 Android 设备提供内核级 Root 权限管理。',
             themeConfig: {
                 nav: [
                     { text: '首页', link: '/zh/' },
