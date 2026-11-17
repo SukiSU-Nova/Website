@@ -29,10 +29,10 @@
   "devDependencies": {
     "@types/node": "^26.0.0",
     "esbuild": "^0.28.2",
+    "markdown-it-mathjax3": "^4",
     "typescript": "^5.9.3",
     "vitepress": "next",
-    "vue": "^3.5.24",
-    "markdown-it-mathjax3": "^4"
+    "vue": "^3.5.24"
   },
   "engines": {
     "node": ">=24"
@@ -40,6 +40,7 @@
   "license": "MIT",
   "dependencies": {
     "@catppuccin/vitepress": "^0.1.2",
+    "@fontsource-variable/urbanist": "^5.3.0",
     "@iconify/vue": "^5.0.0",
     "@nolebase/vitepress-plugin-git-changelog": "^2.18.2",
     "vitepress-plugin-group-icons": "^1.6.5"

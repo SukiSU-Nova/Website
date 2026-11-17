@@ -1,6 +1,5 @@
 @import './custom-block.css';
 @import './doc-fade-in.css';
-@import url(https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap);
 .dark .VPButton.brand:focus-visible {
   outline: 2px solid #000000;
   outline-offset: 2px;
@@ -9,13 +8,12 @@
 
 
 :root {
-  --font-sans: 'Urbanist';
-  --font-heading: 'Urbanist';
+  --font-sans: 'Urbanist Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-heading: var(--font-sans);
 }
 
 html[lang^="zh"] {
-  --font-sans: 'Urbanist';
-  --font-heading: 'Urbanist', sans-serif;
+  --font-sans: 'Urbanist Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
 }
 
 body {

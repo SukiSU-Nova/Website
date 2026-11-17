@@ -2,6 +2,7 @@
 import DefaultTheme from 'vitepress/theme-without-fonts'
 import type { Theme } from 'vitepress'
 import 'virtual:group-icons.css'
+import '@fontsource-variable/urbanist'
 import {h} from 'vue'
 import { Icon as IconifyIcon } from '@iconify/vue'
 import './style/style.css'
