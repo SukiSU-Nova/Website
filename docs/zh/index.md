@@ -92,11 +92,6 @@ const features = {
       title: 'App Profile',
       body: '按应用控制 Root：用户组、权能、SELinux 域、挂载命名空间，以及可复用的模板',
       icon: 'solar:shield-user-outline'
-    },
-    {
-      title: '越狱模式',
-      body: '设备以 Permissive SELinux 启动时，可通过 Magica 获取 Root，并支持开机自动越狱',
-      icon: 'solar:lock-unlocked-outline'
     }
   ]
 }

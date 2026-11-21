@@ -79,7 +79,7 @@ const highlightWords = [
   'bun',
   'install',
   'sukisu',
-  'ultra',
+  'nova',
   'android',
   'kernel',
   'flash',

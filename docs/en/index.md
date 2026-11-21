@@ -92,11 +92,6 @@ const features = {
       title: 'App Profile',
       body: 'Per-app root control: user groups, capabilities, SELinux domain, mount namespace, plus reusable templates.',
       icon: 'solar:shield-user-outline'
-    },
-    {
-      title: 'Jailbreak Mode',
-      body: 'When the device boots with Permissive SELinux, root can be obtained via Magica, with automatic jailbreak on boot supported.',
-      icon: 'solar:lock-unlocked-outline'
     }
   ]
 }

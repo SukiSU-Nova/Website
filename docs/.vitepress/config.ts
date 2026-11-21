@@ -60,7 +60,11 @@ export default defineConfig({
             .replace(/index\.md$/, '')
             .replace(/\.md$/, '')
         const isZh = pageData.relativePath.startsWith('zh/')
-        const locale = siteConfig.site.locales[isZh ? 'zh' : 'root']
+        const isJa = pageData.relativePath.startsWith('ja/')
+        const localeKey = isZh ? 'zh' : isJa ? 'ja' : 'root'
+        const ogLocale = isZh ? 'zh_CN' : isJa ? 'ja_JP' : 'en_US'
+        const alternateLocales = ['en_US', 'zh_CN', 'ja_JP'].filter((l) => l !== ogLocale)
+        const locale = siteConfig.site.locales[localeKey]
         const title = pageData.frontmatter.title || pageData.title || siteConfig.site.title
         const description = pageData.frontmatter.description || locale?.description || siteConfig.site.description
 
@@ -70,8 +74,8 @@ export default defineConfig({
             ['meta', {property: 'og:url', content: canonicalUrl}],
             ['meta', {property: 'og:title', content: title}],
             ['meta', {property: 'og:description', content: description}],
-            ['meta', {property: 'og:locale', content: isZh ? 'zh_CN' : 'en_US'}],
-            ['meta', {property: 'og:locale:alternate', content: isZh ? 'en_US' : 'zh_CN'}]
+            ['meta', {property: 'og:locale', content: ogLocale}],
+            ...alternateLocales.map((alt) => ['meta', {property: 'og:locale:alternate', content: alt}] as [string, Record<string, string>])
         )
 
         return pageData
@@ -275,7 +279,7 @@ export default defineConfig({
                             {text: '许可', link: '/zh/guide/license'},
                         ]
                     },
-                    { text: '团队', link: '/team' }
+                    { text: '团队', link: '/zh/team' }
                 ],
                 sidebar: {
                     '/zh/': {
@@ -311,6 +315,78 @@ export default defineConfig({
                 lastUpdated: {
                     text: '最后更新于',
                 },
+            }
+        },
+        ja: {
+            label: "日本語",
+            link: "/ja/",
+            lang: "ja-JP",
+            description: '次世代の Android Root ソリューション。Android デバイス向けにカーネルレベルの Root 権限管理を提供します。',
+            themeConfig: {
+                nav: [
+                    { text: 'ホーム', link: '/ja/' },
+                    {
+                        text: 'はじめる',
+                        items: [
+                            { text: 'はじめに', link: '/ja/guide/' },
+                            { text: 'インストール', link: '/ja/guide/installation' },
+                            { text: '統合ガイド', link: '/ja/guide/how-to-integrate' },
+                            { text: '互換性', link: '/ja/guide/compatibility' },
+                            { text: 'リンク集', link: '/ja/guide/links' },
+                            { text: 'App Profile', link: '/ja/guide/app-profile' },
+                            { text: 'トラブルシューティング', link: '/ja/guide/troubleshooting' },
+                            { text: 'ライセンス', link: '/ja/guide/license' },
+                        ]
+                    },
+                    { text: 'チーム', link: '/ja/team' }
+                ],
+                sidebar: {
+                    '/ja/': {
+                        base: '/ja/',
+                        items: [
+                            {
+                                text: 'はじめる',
+                                items: [
+                                    { text: 'はじめに', link: '/guide/' },
+                                    { text: 'インストール', link: '/guide/installation' },
+                                    { text: '統合ガイド', link: '/guide/how-to-integrate' },
+                                    { text: '互換性', link: '/guide/compatibility' },
+                                    { text: 'リンク集', link: '/guide/links' },
+                                    { text: 'App Profile', link: '/guide/app-profile' },
+                                    { text: 'トラブルシューティング', link: '/guide/troubleshooting' },
+                                    { text: 'ライセンス', link: '/guide/license' },
+                                ]
+                            }
+                        ]
+                    }
+                },
+                editLink: {
+                    pattern: 'https://git.zako.shirkneko.top:20004/shirkneko/SukiSU-Website/_edit/main/docs/:path',
+                    text: 'このページを編集',
+                },
+                docFooter: {
+                    prev: '前のページ',
+                    next: '次のページ',
+                },
+                outline: {
+                    label: '目次',
+                },
+                lastUpdated: {
+                    text: '最終更新',
+                },
+                notFound: {
+                    title: 'ページが見つかりません',
+                    quote: 'お探しのページは見つかりませんでした。',
+                    linkLabel: 'ホームへ戻る',
+                    linkText: 'ホームへ戻る',
+                },
+                langMenuLabel: '言語',
+                returnToTopLabel: 'トップへ戻る',
+                sidebarMenuLabel: 'メニュー',
+                darkModeSwitchLabel: 'テーマ',
+                lightModeSwitchTitle: 'ライトテーマに切り替え',
+                darkModeSwitchTitle: 'ダークテーマに切り替え',
+                skipToContentLabel: 'コンテンツへスキップ',
             }
         },
     },

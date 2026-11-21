@@ -11,13 +11,16 @@ import { VPTeamPage, VPTeamPageTitle, VPTeamMembers } from 'vitepress/theme'
 
 const coreMembers = [
   {
-    avatar: 'https://github.com/shirkneko.png',
+    avatar: '/avatars/shirkneko.png',
     name: 'Shirk Neko',
     title: 'Founder & Lead Developer',
     desc: 'Creator of SukiSU-Nova',
     links: [
-      { icon: 'github', link: 'https://github.com/shirkneko' },
-      { icon: 'telegram', link: 'https://t.me/shirkneko'}
+      {
+        icon: { svg: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 5a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5z" fill="currentColor"/></svg>' },
+        link: 'https://git.zako.shirkneko.top:20004/shirkneko'
+      },
+      { icon: 'telegram', link: 'https://t.me/shirkneko' }
     ]
   },
   {
@@ -26,8 +29,8 @@ const coreMembers = [
     title: 'Core Member',
     links: [
       { icon: 'github', link: 'https://github.com/shiinasaku' },
-      { icon: 'x', link: 'https://x.com/typeflu'},
-      { icon: 'telegram', link: 'https://t.me/SakuShiina'}
+      { icon: 'x', link: 'https://x.com/typeflu' },
+      { icon: 'telegram', link: 'https://t.me/SakuShiina' }
     ]
   },
   {
@@ -36,7 +39,16 @@ const coreMembers = [
     title: 'Head Designer',
     links: [
       { icon: 'github', link: 'https://github.com/mirinchan' },
-      { icon: 'telegram', link: 'https://t.me/bbbneko'}
+      { icon: 'telegram', link: 'https://t.me/bbbneko' }
+    ]
+  },
+  {
+    avatar: 'https://github.com/HSSkyBoy.png',
+    name: 'NkBe',
+    title: 'Developer & Maintainer',
+    links: [
+      { icon: 'github', link: 'https://github.com/HSSkyBoy' },
+      { icon: 'telegram', link: 'https://t.me/NP_NBCN' }
     ]
   },
   {
@@ -45,24 +57,7 @@ const coreMembers = [
     title: 'Junior Designer',
     links: [
       { icon: 'github', link: 'https://github.com/oukaromf' },
-      { icon: 'telegram', link: 'https://t.me/mfnotmtf'}
-    ]
-  },
-  {
-    avatar: 'https://github.com/tools-cx-app.png',
-    name: 'Hutao',
-    title: 'Rust Code Maintainer',
-    links: [
-      { icon: 'github', link: 'https://github.com/tools-cx-app' },
-      { icon: 'telegram', link: 'https://t.me/localhost_hutao'}
-    ]
-  },
-  {
-    avatar: 'https://github.com/udochina.png',
-    name: 'Liankong',
-    title: 'KPM Maintainer',
-    links: [
-      { icon: 'github', link: 'https://github.com/udochina' }
+      { icon: 'telegram', link: 'https://t.me/mfnotmtf' }
     ]
   },
   {
@@ -71,29 +66,9 @@ const coreMembers = [
     title: 'Kernel Manager',
     links: [
       { icon: 'github', link: 'https://github.com/xiaomichael' },
-      { icon: 'telegram', link: 'https://t.me/xiaoxiao1221w'}
+      { icon: 'telegram', link: 'https://t.me/xiaoxiao1221w' }
     ]
-  },
-  {
-    avatar: 'https://github.com/HSSkyBoy.png',
-    name: 'NkBe',
-    title: 'Maintainer',
-    links: [
-      { icon: 'github', link: 'https://github.com/HSSkyBoy' },
-      { icon: 'telegram', link: 'https://t.me/HSSkyBoy'}
-    ]
-  },
-  {
-    avatar: 'https://github.com/luyanci.png',
-    name: 'Luyanci',
-    title: 'Bot Maintainer',
-    links: [
-      { icon: 'github', link: 'https://github.com/luyanci' },
-      { icon: 'telegram', link: 'https://t.me/luyancib'}
-    ]
-  },
-  
-  
+  }
 ]
 </script>
 

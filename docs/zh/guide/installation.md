@@ -99,7 +99,7 @@ LKM 模式将 SukiSU-Nova 作为可加载内核模块 (LKM) 安装。管理器�
 
 ### 手动内核集成
 
-面向希望将 SukiSU Ultra 集成到自己内核构建中的高级用户
+面向希望将 SukiSU Nova 集成到自己内核构建中的高级用户
 
 #### 主分支（LKM）
 
@@ -131,8 +131,8 @@ curl -LSs "https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/raw/branch/main
 
 1. 系统更新后重启前
 
-   - OTA 安装后不要立即重启，将 SukiSU Ultra 安装到第二插槽  
-   - 打开 SukiSU Ultra 管理器，在**刷入/修补内核**界面选择 **GKI/non_GKI install**，选择您的 `AnyKernel3` 内核 `zip` 文件，选择与当前运行插槽相对的插槽然后刷入重启。
+   - OTA 安装后不要立即重启，将 SukiSU Nova 安装到第二插槽  
+   - 打开 SukiSU Nova 管理器，在**刷入/修补内核**界面选择 **GKI/non_GKI install**，选择您的 `AnyKernel3` 内核 `zip` 文件，选择与当前运行插槽相对的插槽然后刷入重启。
 
 3. 替代方案：LKM 模式
 
@@ -145,7 +145,7 @@ curl -LSs "https://git.zako.shirkneko.top:20004/shirkneko/SukiSU/raw/branch/main
 ## 验证
 
 安装后，验证一切是否正常工作，
-- 打开 SukiSU Ultra 管理器检查 root 工作状态
+- 打开 SukiSU Nova 管理器检查 root 工作状态
 - 使用 root 权限的应用程序来验证 root 访问是否工作正常
 - 在设置 -> 关于手机中检查内核版本
 
